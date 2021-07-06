@@ -1,0 +1,1347 @@
+*{
+    box-sizing: border-box;
+}
+
+/* main */
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+	line-height: 1.5;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    background: #1c1d21;
+    z-index: 1;
+	height: 850px;
+}
+.clearfix{
+    clear: both;
+}
+
+/* start my framework */
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.text-center{
+    text-align: center;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.h1{
+    font-size: 2em;
+}
+
+/*end framework */
+
+/* navbar */
+
+nav{
+    height: 0;
+    position: relative;
+    z-index: 2;
+}
+.main-nav .navbar-brand,
+.main-nav .links{
+    width: 50%;
+    float: left;
+    text-transform: capitalize;
+	margin: 25px 0px 0 0px;
+}
+.main-nav .navbar-brand h1{
+    font-weight: 800;
+    font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 18px;
+}
+.main-nav .navbar-brand h1 span{
+	color: #f7b71d;
+}
+.main-nav .nav-content .nav{
+	display: none;
+	width: 100%;
+	padding: 6px 20px;
+	text-align: right;
+	font-size: 30px;
+	background-color: #1c1d21;
+}
+.main-nav .nav-content .nav a{
+	color: #fff;
+}
+.main-nav .links li{
+    display: inline-block;
+    margin: 22px 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.main-nav .links li a{
+    color: #fff;
+}
+.main-nav .links li a:hover{
+	color: #f7b71d;
+}
+.links li a.active{
+	color: #f7b71d;
+}
+.main-nav .nav-content{
+	width: 100%;
+	padding: 10px 20px;
+}
+
+/*main header*/
+
+#main-header{
+    background-image: url(../images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+	position: relative;
+}
+.main-content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 28%;
+	z-index: 2;
+	font-family: 'Overpass', sans-serif;
+}
+#main-header .main-content .now{
+	width: 39%;
+	margin-left: 115px;
+	line-height: 1.2;
+}
+#main-header .main-content .now h5{
+   margin: 0;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 200;
+	margin-bottom: 20px;
+}
+#main-header .main-content .now p{
+	color: #fff;
+    font-size: 18px;
+	line-height: 1.5;
+}
+#main-header .main-content .now i{
+	padding: 30px;
+    color: #fff;
+    background: #fc983c;
+    border-radius: 50px;
+    font-size: 10px;
+    margin: 25px 6px 0 0;
+	cursor: pointer;
+}
+#main-header .main-content .now a:after{
+	position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    top: 377px;
+}
+#main-header .main-content .now span{
+	color: #fff;
+	margin-left: 33px;
+}
+#main-header .main-content .form{
+	width: 29%;
+    background-color: #fff;
+    margin: -45px 0 0px 219px;
+    padding: 30px;
+    border-radius: 5px;
+}
+#main-header .main-content .form input{
+	margin: 10px 0 20px 0;
+}
+#main-header .main-content .form h2{
+	font-size: 22px;
+    font-weight: 600;
+	margin-bottom: 20px;
+}
+#main-header .main-content .form h3{
+	font-size: 12px;
+	font-weight: 600;
+}
+#main-header .main-content .form .location input{
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	width: 100% ;
+    padding: 15px 10px;
+    font-size: 12px;
+}
+#main-header .main-content .form .time input{
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	width: 100%;
+    padding: 13px 10px;
+    font-size: 12px;
+}
+#main-header .main-content .form .date{
+    width: 49%;
+	margin-left: 2px;
+}
+#main-header .main-content .form .date input{
+	width: 89%;
+    padding: 13px 10px;
+	width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 12px;
+}
+#main-header .main-content .form .search{
+	margin: 15px 0 30px 0;
+}
+#main-header .main-content .form .search input{
+	background: #fc983c;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+}
+
+/*first section*/
+
+#first-section .first-content h2{
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#first-section .first-content .option .select{
+	padding: 13px 85px 13px 10px;
+	border-radius: 4px;
+}
+#first-section .first-content .option .selectt{
+	padding: 13px 90px 13px 10px;
+	border-radius: 4px;
+}
+#first-section .first-content .option .selecttt{
+	padding: 13px 110px 13px 10px;
+	border-radius: 4px;
+}
+#first-section .first-content .option{
+	margin: 80px 15px;
+	border-radius: 4px;
+}
+#first-section .first-content .search{
+	margin: 124px 9px;
+}
+#first-section .first-content .search a{
+	background: #fc983c;
+    color: #fff;
+    padding: 14px 70px;
+    font-size: 16px;
+    font-weight: 600;
+	border-radius: 4px;
+}
+
+/*sevices*/
+
+#services .services-content .services-header1{
+	text-align: center;
+    text-transform: uppercase;
+	font-size: 12px;
+    font-weight: 600;
+    color: #fc983c;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+#services .services-content .services-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+}
+#services .services-content p{
+    font-size: 16px;
+    margin-top: 35px;
+    color: rgba(0, 0, 0, 0.8);
+}
+#services .services-content .car,
+#services .services-content .location,
+#services .services-content .reservation,
+#services .services-content .rental{
+    display: inline-block;
+    width: 24%;
+    margin: 35px 0px 35px 11px;
+    position: relative;
+    padding: 25px;
+}
+#services .services-content .car h2,
+#services .services-content .location h2,
+#services .services-content .reservation h2,
+#services .services-content .rental h2{
+    margin: 0 35px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+}
+#services .services-content i{
+    position: absolute;
+    font-size: 30px;
+    margin-left: -10px;
+    color: #fd7e14;
+}
+
+/*offer*/
+
+#offer{
+	padding: 50px 20px 125px 10px;
+}
+#offer .offer-content .offer-header1{
+	text-align: center;
+    text-transform: uppercase;
+	font-size: 12px;
+    font-weight: 600;
+    color: #fc983c;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+#offer .offer-content .offer-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+}
+#offer .offer-content .car{
+    display: inline-block;
+    width: 25%;
+    margin: 50px 0px 0 0;
+    padding: 0px 10px 0 10px;
+    float: left;
+}
+#offer .offer-content i{
+    position: absolute;
+    font-size: 30px;
+    margin-left: -10px;
+    color: #fd7e14;
+}
+#offer .offer-content .car .pic1 .price{
+    background: #fff;
+	display: flex;
+    padding: 10px;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+	height: 50px;
+    box-shadow: -10px 10px 25px -10px rgba(0, 0, 0, 0.17);
+}
+#offer .offer-content .car .pic1 .price .pri{
+	font-size: 24px;
+    font-weight: 300;
+    color: #fc983c;
+	display: flex;
+	padding-right: 5px;
+}
+#offer .offer-content .car .pic1{
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	position: relative;
+}
+#offer .offer-content .car .pic1 .price .from{
+	color: rgba(0, 0, 0, 0.3);
+    font-size: 9px;
+}
+#offer .offer-content .car .pic1 .price .day{
+    font-size: 9px;
+    color: #000;
+	display: flex;
+	line-height: 0;
+}
+#offer .offer-content .car .content{
+	border: 1px solid rgba(0, 0, 0, 0.05);
+}
+#offer .offer-content .car .content h2{
+	margin: 20px 35px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+	text-align: center;
+}
+#offer .offer-content .car .content p{
+	font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+    text-align: center;
+}
+#offer .offer-content .car .content .links{
+	margin: 25px 12px;
+}
+#offer .offer-content .car .content .links .book{
+	border: 1px solid #ebebeb;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0px;
+	width: 48%;
+	text-align: center;
+	border-radius: 4px;
+	transition: .3s all ease-in-out;
+}
+#offer .offer-content .car .content .links .book:hover{
+	background-color: #fc983c;
+	border: 1px solid #fc983c;
+	color: #fff;
+}
+#offer .offer-content .car .content .links .details{
+	border: 1px solid #ebebeb;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0px;
+	width: 48%;
+	text-align: center;
+	border-radius: 4px;
+	transition: .3s all ease-in-out;
+}
+#offer .offer-content .car .content .links .details:hover{
+	background-color: #fc983c;
+	border: 1px solid #fc983c;
+	color: #fff;
+}
+
+/*work*/
+
+#work{
+	background-image: url(../images/bg_2.jpg);
+	background-size: cover;
+	padding-bottom: 90px;
+	position: relative;
+    background-position: center;
+}
+#work .overlay{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    z-index: 1;
+	height: 620px;
+}
+#work .work-content{
+	position: relative;
+	z-index: 2;
+}
+#work .work-content .our{
+	padding: 100px 0 25px 0;
+}
+#work .work-content .work-header1{
+	text-align: center;
+    text-transform: uppercase;
+	font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+#work .work-content .work-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+#work .work-content p{
+    font-size: 16px;
+    color: #fff;
+	text-align: center;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+#work .work-content .car,
+#work .work-content .location,
+#work .work-content .reservation,
+#work .work-content .rental{
+    display: inline-block;
+    width: 25%;
+    margin: 35px 0px 0px 0px;
+    padding: 25px;
+}
+#work .work-content .car h2,
+#work .work-content .location h2,
+#work .work-content .reservation h2,
+#work .work-content .rental h2{
+    margin: 0 35px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+	color: #fff;
+	text-align: center;
+}
+#work .work-content i{
+    font-size: 30px;
+    color: #fff;
+    border: 2px solid #fd7e14;
+    border-radius: 53px;
+    padding: 30px;
+	margin-left: 65px;
+    margin-bottom: 25px;
+}
+
+/*clients*/
+
+#clients{
+	padding-bottom: 125px;
+}
+#clients .clients-content .our{
+	padding: 100px 0 25px 0;
+}
+#clients .clients-content .clients-header1{
+	text-align: center;
+    text-transform: uppercase;
+	font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+	color: #fc983c;
+}
+#clients .clients-content .clients-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.8);
+}
+#clients .clients-content .divs{
+    padding: 30px 47px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 5px 30px -15px rgba(0, 0, 0, 0.19);
+}
+#clients .clients-content .divs img{
+    height: 100px;
+    width: 100px;
+    border-radius: 70px;
+    margin-left: 75px;
+    margin-bottom: 32px;
+}
+#clients .clients-content .ter{
+    margin: 40px 0 0 0;
+	padding: 30px 0;
+}
+#clients .clients-content p{
+    color: #666666;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+#clients .clients-content h5{
+    font-weight: 500;
+    font-size: 20px;
+    color: #fc983c;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2;
+}
+#clients .clients-content h4{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #666;
+    text-align: center;
+}
+
+/*about*/
+
+#about .about-content .pic2{
+	background-image: url(../images/about.jpg);
+	width: 47%;
+    height: 770px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0px 0 55px;
+}
+#about .about-content .aboutUs{
+	padding: 60px 60px 0px 50px;
+	width: 47%;
+}
+#about .about-content .aboutUs .us{
+	color: #fc983c;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+#about .about-content .aboutUs .choose{
+	font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+#about .about-content .aboutUs p{
+	color: #666666;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+#about .about-content .aboutUs .link .vehicle{
+	background: #fc983c;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #fc983c;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*blog*/
+
+#blog{
+	margin-bottom: 125px;
+}
+#blog .blog-content .recent{
+	padding: 100px 0 25px 0;
+}
+#blog .blog-content .blog-header1{
+	text-align: center;
+    text-transform: uppercase;
+	font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+	color: #fc983c;
+}
+#blog .blog-content .blog-header{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.8);
+}
+#blog .blog-content .blog1{
+	width: 30%;
+	margin: 0 10px 0 25px;
+}
+#blog .blog-content .blog1 .pic3{
+	height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+#blog .blog-content .blog1 .date{
+	padding: 25px 0;
+}
+#blog .blog-content .blog1 .date a{
+	color: #b3b3b3;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: 5px;
+}
+#blog .blog-content .date a:hover{
+	color: #666666;
+}
+#blog .blog-content .blog1 .why h2{
+	padding: 0px 30px 15px 0;
+    font-weight: 400;
+    font-size: 18px;
+    float: left;
+    padding-right: 30px;
+}
+#blog .blog-content .blog1 .why h2 a{
+	color: rgba(0, 0, 0, 0.8);
+}
+#blog .blog-content .blog1 .why h2 a:hover{
+	color: #fc983c;
+}
+#blog .blog-content .blog1 .why p{
+	padding: 0 28px 0 0;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #666666;
+}
+
+/*contact*/
+
+#contact{
+	background: #000;
+    padding: 100px 0 50px 0;
+}
+#contact .contact-content .con{
+	width: 25%;
+	padding: 0px 18px 0 22px;
+}
+#contact .contact-content .con h3{
+	color: #fff;
+    font-size: 20px;
+	margin-bottom: 40px;
+}
+#contact .contact-content .con p{
+	color: rgba(255,255,255,.7);
+    font-size: 16px;
+    font-weight: 400;
+}
+#contact .contact-content .con li{
+	color: rgba(255,255,255,.8);
+    margin-bottom: 14px;
+}
+#contact .contact-content .con .icons{
+	width: 50px;
+    height: 50px;
+    font-size: 26px;
+    margin: 60px 18px 0 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 189px;
+    padding: 12px 0 0 14px;
+    color: #fff;
+}
+#contact .contact-content .con .fa-twitter:hover{
+	color: #00abf0;
+}
+#contact .contact-content .con .fa-facebook-f:hover{
+	color: #39579a;
+}
+#contact .contact-content .con .fa-instagram:hover{
+	color: #e1306c;
+}
+#contact .contact-content .con a{
+	color: rgba(255,255,255,.8);
+}
+#contact .contact-content .con ul li span{
+	display: table-cell;
+    padding-left: 40px;
+}
+#contact .contact-content .con .have{
+	width: 40px;
+    font-size: 18px;
+    padding-top: 2px;
+    color: #fff;
+    position: absolute;
+}
+
+/*loading*/
+
+.loading-overlay{
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+}
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+	position: absolute;
+    top: 40%;
+    left: 47%;
+    right: 0;
+    bottom: 0;
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 51px;
+  height: 51px;
+  margin: 6px;
+  border-radius: 50%;
+  background: #fd7e14;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+/*scroll-up*/
+
+#scroll-up {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #fc983c;
+	color: #fff;
+    cursor: pointer;
+    display: none;
+}
+#scroll-up i {
+    margin-top: 14px;
+    font-size: 17px;
+    transition: .4s all ease-in-out;
+}
+#scroll-up i:hover{
+	margin-top: 7px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px){
+	.container{
+        width: 480px;
+    }
+		.main-nav .container{
+		width: 100%;
+	}
+	.main-nav .nav-content{
+		padding: 0;
+	}
+	.main-nav .nav-content .nav{
+		display: block;
+	}
+	.main-nav .nav-content .links{
+		width: 100%;
+		display: none;
+	}
+	.main-nav .nav-content .links li{
+		display: block;
+		float: left;
+    	width: 100%;
+		margin: 0;
+		padding: 22px 24px;
+	}
+	.main-nav .links{
+		margin: 0;
+		background: #1c1d21;
+	}
+	.main-nav .navbar-brand{
+		margin: -5px 0 0 21px;
+	}
+	#main-header .main-content .now{
+		width: 100%;
+		margin-left: 0;
+		padding: 2% 5% 15% 5%;
+	}
+	#main-header{
+		height: 1450px;
+	}
+	.overlay{
+		height: 1450px;
+	}
+	#main-header .main-content .now a:after{
+		top: 387px;
+	}
+	#main-header .main-content .form{
+		width: 90%;
+		margin: -45px 0 0px 27px;
+	}
+	#first-section .first-content .option{
+		float: none;
+	}
+	#first-section .first-content .option .select{
+		padding: 13px 10px;
+		width: 100%;
+	}
+	#first-section .first-content .option .selectt{
+		width: 100%;
+    	padding: 13px 10px;
+	}
+	#first-section .first-content .option .selecttt{
+		width: 100%;
+    	padding: 13px 10px;
+	}
+	#first-section .first-content .search{
+		margin: 10px 10px 124px 10px;
+	}
+	#first-section .first-content .search a{
+		padding: 14px 200px;
+	}
+	#services .services-content .car, #services .services-content .location, #services .services-content .reservation, #services .services-content .rental{
+		width: 60%;
+    	margin: 35px 0 35px 120px;
+		float: none;
+	}
+	#offer{
+		padding: 50px 0 125px 0;
+	}
+	#offer .offer-content .car{
+		float: none;
+		width: 100%;
+		padding: 0px 11px 0 10px
+	}
+	#offer .offer-content .car .content .links{
+		margin: 25px 36px;
+	}
+	#offer .offer-content .car .content .links .book{
+		padding: 10px 0px;
+		margin-right: 10px;
+	}
+	#offer .offer-content .car .content .links .details{
+		padding: 10px 0px;
+	}
+	#work .work-content .car, #work .work-content .location, #work .work-content .reservation, #work .work-content .rental{
+		width: 100%;
+		margin: 35px 0px 0px 0px;
+		padding: 20px 133px;
+		float: none;
+	}
+	#work .overlay{
+		height: 1546px;
+	}
+	#clients{
+		padding-bottom: 100px;
+	}
+	#clients .clients-content .divs{
+		padding: 30px 55px;
+	}
+	#clients .clients-content .divs img{
+		margin-left: 135px;
+	}
+	#about .about-content .pic2{
+		float: none;
+		margin: 0 0 0 10px;
+		width: 95%;
+	}
+	#about .about-content .aboutUs{
+		width: 100%;
+		float: none;
+	}
+	#blog .blog-content .blog1{
+		width: 95%;
+    	margin: 0 0 0 11px;
+	}
+	#blog .blog-content .blog1 .date{
+		text-align: center;
+	}
+	#blog .blog-content .blog1 .why h2{
+		padding: 0px 0px 15px 35px;
+	}
+	#blog .blog-content .blog1 .why p{
+		padding: 30px 75px;
+    	text-align: center;
+	}
+	#contact .contact-content .con{
+		width: 100%;
+    	padding: 15px 101px;
+	}
+	#contact .contact-content .con .social li{
+		float: left;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px){
+	.container{
+        width: 500px;
+    }
+	.main-nav .container{
+		width: 100%;
+	}
+	.main-nav .nav-content{
+		padding: 0;
+	}
+	.main-nav .nav-content .nav{
+		display: block;
+	}
+	.main-nav .nav-content .links{
+		width: 100%;
+		display: none;
+	}
+	.main-nav .nav-content .links li{
+		display: block;
+		float: left;
+    	width: 100%;
+		margin: 0;
+		padding: 22px 24px;
+	}
+	.main-nav .links{
+		margin: 0;
+		background: #1c1d21;
+	}
+	.main-nav .navbar-brand{
+		margin: -5px 0 0 21px;
+	}
+	#main-header .main-content .now{
+		width: 100%;
+		margin-left: 0;
+		padding: 2% 20% 15% 5%;
+	}
+	#main-header{
+		height: 1450px;
+	}
+	.main-content{
+		top: 10%;
+	}
+	.overlay{
+		height: 1450px;
+	}
+	#main-header .main-content .now a:after{
+		top: 387px;
+	}
+	#main-header .main-content .form{
+		width: 90%;
+		margin: -45px 0 0px 27px;
+	}
+	#first-section .first-content .option{
+		float: none;
+	}
+	#first-section .first-content .option .select{
+		padding: 13px 10px;
+		width: 100%;
+	}
+	#first-section .first-content .option .selectt{
+		width: 100%;
+    	padding: 13px 10px;
+	}
+	#first-section .first-content .option .selecttt{
+		width: 100%;
+    	padding: 13px 10px;
+	}
+	#first-section .first-content .search{
+		margin: 10px 10px 124px 10px;
+	}
+	#first-section .first-content .search a{
+		padding: 14px 210px;
+	}
+	#services .services-content .car, #services .services-content .location, #services .services-content .reservation, #services .services-content .rental{
+		width: 60%;
+    	margin: 35px 0 35px 120px;
+		float: none;
+	}
+	#offer .offer-content .car{
+		float: none;
+		width: 100%;
+	}
+	#offer .offer-content .car .content .links{
+		margin: 25px 43px;
+	}
+	#offer .offer-content .car .content .links .book{
+		padding: 10px 0px;
+		margin-right: 10px;
+	}
+	#offer .offer-content .car .content .links .details{
+		padding: 10px 0px;
+	}
+	#work .work-content .car, #work .work-content .location, #work .work-content .reservation, #work .work-content .rental{
+		width: 100%;
+		margin: 35px 0px 0px 0px;
+		padding: 20px 133px;
+		float: none;
+	}
+	#work .overlay{
+		height: 1546px;
+	}
+	#work .work-content i{
+		margin-left: 70px;
+	}
+	#clients .clients-content .divs img{
+		margin-left: 40px;
+	}
+	#clients .clients-content .divs{
+		padding: 30px 28px;
+	}
+	#about .about-content .pic2{
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	#about .about-content .aboutUs{
+		width: 100%;
+		float: none;
+	}
+	#blog .blog-content .blog1{
+		width: 100%;
+		margin: 0;
+	}
+	#blog .blog-content .blog1 .date{
+		text-align: center;
+	}
+	#blog .blog-content .blog1 .why h2{
+		padding: 0px 0px 15px 46px;
+	}
+	#blog .blog-content .blog1 .why p{
+		padding: 30px 75px;
+    	text-align: center;
+	}
+	#contact .contact-content .con{
+		width: 100%;
+    	padding: 15px 101px;
+	}
+	#contact .contact-content .con .social li{
+		float: left;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+	
+	.container{
+        width: 700px;
+    }
+	.main-nav .container{
+		width: 100%;
+	}
+	.main-nav .nav-content{
+		padding: 0;
+	}
+	.main-nav .nav-content .nav{
+		display: block;
+	}
+	.main-nav .nav-content .links{
+		width: 100%;
+		display: none;
+	}
+	.main-nav .nav-content .links li{
+		display: block;
+		float: left;
+    	width: 100%;
+		margin: 0;
+		padding: 22px 24px;
+	}
+	.main-nav .links{
+		margin: 0;
+		background: #1c1d21;
+	}
+	.main-nav .navbar-brand{
+		margin: -5px 0 0 21px;
+	}
+	#main-header .main-content .now{
+		width: 44%;
+		margin-left: 0px;
+		padding: 0 0 0 3%;
+	}
+	#main-header .main-content .form{
+		margin: -45px 0 0 65px;
+		width: 45%;
+	}
+	#main-header .main-content .now a:after{
+		top: 475px;
+	}
+	#first-section .first-content .option{
+		float: none;
+	}
+	#first-section .first-content .option .select{
+		padding: 13px 10px;
+		width: 100%;
+	}
+	#first-section .first-content .option .selectt{
+		width: 100%;
+    	padding: 13px 10px;
+	}
+	#first-section .first-content .option .selecttt{
+		width: 100%;
+    	padding: 13px 10px;
+	}
+	#first-section .first-content .search{
+		margin: 10px 10px 124px 13px;
+	}
+	#first-section .first-content .search a{
+		padding: 14px 310px;
+	}
+	#services .services-content .car, #services .services-content .location, #services .services-content .reservation, #services .services-content .rental{
+		width: 60%;
+		float: none;
+		margin: 35px 0 35px 165px;
+	}
+	#offer .offer-content .car{
+		float: none;
+		width: 100%;
+	}
+	#offer .offer-content .car .pic1{
+		height: 350px;
+	}
+	#offer .offer-content .car .content h2{
+		font-size: 23px;
+	}
+	#offer .offer-content .car .content p{
+		font-size: 13px;
+	}
+	#offer .offer-content .car .content .links{
+		margin: 25px 43px;
+	}
+	#offer .offer-content .car .content .links .book{
+		padding: 10px 0px;
+		margin-right: 10px;
+		font-size: 16px;
+	}
+	#offer .offer-content .car .content .links .details{
+		padding: 10px 0px;
+		font-size: 16px;
+	}
+	#work .work-content .car, #work .work-content .location, #work .work-content .reservation, #work .work-content .rental{
+		width: 100%;
+		margin: 35px 0px 0px 0px;
+		padding: 20px 133px;
+		float: none;
+	}
+	#work .overlay{
+		height: 1438px;
+	}
+	#work .work-content i{
+		margin-left: 165px;
+	}
+	#clients .clients-content .divs img{
+		margin-left: 70px;
+	}
+	#about .about-content .pic2{
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	#about .about-content .aboutUs{
+		width: 100%;
+    	float: none;
+	}
+	#blog .blog-content .blog1{
+		margin: 0px;
+		width: 100%;
+    	float: none;
+	}
+	#blog .blog-content .blog1 .date{
+		text-align: center;
+	}
+	#blog .blog-content .blog1 .why h2{
+		float: none;
+		text-align: center;
+	}
+	#blog .blog-content .blog1 .why p{
+		padding: 0 110px 30px 100px;
+		text-align: center;
+	}
+	#contact{
+		padding: 100px 0 0 0;
+	}
+	#contact .contact-content .con{
+		margin-bottom: 30px;
+    	width: 50%;
+		padding: 0px 20px 0 56px;
+	}
+	#contact .contact-content .con .icons{
+		margin: 30px 18px 0 0;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+	
+	.container{
+		width: 900px;
+	}
+	.main-nav .navbar-brand, 
+	.main-nav .links{
+		margin: 25px 0px 0 0;
+		width: 61%;
+	}
+	.main-nav .links{
+		position: relative !important;
+		display: block !important;
+	}
+	.main-nav .navbar-brand{
+		margin-left: 0px;
+		width: 39%;
+	}
+	#main-header .main-content .now{
+		margin-left: 5%;
+		width: 43%;
+	}
+	#main-header .main-content .form{
+		width: 35%;
+		margin: -45px 0 0px 150px;
+	}
+	#main-header .main-content .form .location input{
+		padding: 15px 118px 15px 10px;
+	}
+	#main-header .main-content .form .time input{
+		padding: 13px 181px 13px 10px;
+	}
+	#main-header .main-content .form .search a{
+		padding: 20px 86px;
+	}
+	#first-section .first-content .option .select{
+		padding: 13px 60px 13px 10px;
+	}
+	#first-section .first-content .option .selectt{
+		padding: 13px 65px 13px 10px;
+	}
+	#first-section .first-content .option .selecttt{
+		padding: 13px 85px 13px 10px;
+	}
+	#first-section .first-content .search a{
+		padding: 14px 55px;
+	}
+	#first-section .first-content .option{
+		margin: 80px 5px;
+	}
+	#services .services-content .car, #services .services-content .location, #services .services-content .reservation, #services .services-content .rental{
+		width: 24%;
+    	margin: 35px 0px 35px 9px;
+		padding: 25px 0px;
+	}
+	#offer{
+		padding: 50px 0px 125px 0px;
+	}
+	#offer .offer-content .car{
+		width: 50%;
+		padding: 0px 0px 0 9px;
+	}
+	#offer .offer-content .car .content .links{
+		    margin: 25px 11px;
+	}
+	#offer .offer-content .car .content .links .book{
+		padding: 10px 0px;
+	}
+	#offer .offer-content .car .content .links .details{
+		padding: 10px 0px;
+	}
+	#work .work-content .car, #work .work-content .location, #work .work-content .reservation, #work .work-content .rental{
+		width: 25%;
+    	margin: 35px 0px 0px 0px;
+    	padding: 25px 0px;
+	}
+	#work .work-content i{
+		margin-left: 65px;
+	}
+	#clients .clients-content .divs img{
+		margin-left: 45px;
+	}
+	#about .about-content .pic2{
+		height: 750px;
+		margin: 0px 0px 0 10px;
+		width: 49%;
+	}
+	#about .about-content .aboutUs{
+		padding: 40px 0 0px 51px;
+    	width: 49%;
+	}
+	#blog .blog-content .blog1{
+		width: 31%;
+		margin: 0 10px 0 11px;
+	}
+	#contact .contact-content .con{
+		width: 24%;
+    	padding: 0px 0 0 15px;
+	}
+	#contact .contact-content .con .icons{
+		margin: 60px 17px 0 0;
+	}
+}
